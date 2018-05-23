@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employment Data</title>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Employee Data Management</h1>
+                <p class="lead">A Comprehensive Directory of Employee Billable Hours</p>
+            </div>
+        </div>
+
+        <div id="empList">
+            <div class="container">
+                <div class = "row">
+                    <h2>Current Employees</h2>
+                </div>
+                <!-- <div class = "row">
+                    <div class = "col-md-2">
+                        Employee Name
+                    </div>
+                    <div class = "col-md-2">
+                        Role
+                    </div>
+                    <div class = "col-md-2">
+                        Start Date
+                    </div>
+                    <div class = "col-md-2">
+                        Months Worked
+                    </div>
+                    <div class = "col-md-2">
+                        Monthly Rate ($)
+                    </div>
+                    <div class = "col-md-2">
+                        Total Billed ($)
+                        
+                    </div>
+                </div>
+                <div class = "row" id="new">
+                    <div class = "col-md-2" id="name-display" >
+                        
+                    </div>
+                    <div class = "col-md-2" id="role-display">
+
+                    </div>
+                    <div class = "col-md-2" id="startDate-display">
+
+                    </div>
+                    <div class = "col-md-2" id="monthsWorked-display">
+
+                    </div>
+                    <div class = "col-md-2" id="monthlyRate-display">
+
+                    </div>
+                    <div class = "col-md-2" id="total-display">
+
+                        
+                    </div>
+                </div> -->
+                <table class="table employees">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Monthly Rate</th>
+                            <th scope="col">Monthly Worked</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" id="name-display"></th>
+                            <td id="role-display"></td>
+                            <td id="startDate-display"></td>
+                            <td id="monthlyRate-display"></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+            </div>
+
+        </div>
+
+        <div id="input">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputName">Name</label>
+                    <input type="name" class="form-control" id="name-input" aria-describedby="Name" placeholder="Enter Name">
+                    <small id="NamelHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputRole1">Role</label>
+                    <input type="Role" class="form-control" id="role-input" placeholder="Role">
+                </div>
+                <div class="form-group">
+                        <label for="exampleInputStartDate1">Start Date (DD/MM/YY)</label>
+                        <input type="StartDate" class="form-control" id="startDate-input" placeholder="StartDate">
+                    </div>
+                <div class="form-group">
+                        <label for="exampleInputMonthlyRate1">Monthly Rate</label>
+                        <input type="MonthlyRate" class="form-control" id="monthlyRate-input" placeholder="MonthlyRate">
+                    </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "logic.js"></script>
+
+</body>
+</html>

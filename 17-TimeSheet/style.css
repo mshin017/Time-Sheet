@@ -1,0 +1,38 @@
+.jumbotron {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Cuprum', sans-serif;
+}
+
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Cuprum', sans-serif;
+    text-align: center;
+
+}
+
+.employees {
+    padding: 20px;
+    font-size: 18px;
+}
+
+form {
+    width: 500px;
+    border: 1px solid;
+    padding: 10px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    padding: 10px;
+}
